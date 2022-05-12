@@ -9,13 +9,71 @@
 body{
     font-family: 'PT Sans', sans-serif;
 }
+.mobile-padding{
+    padding: 0 2rem; 
+}
+.flex{
+    display: flex;
+}
+.btn{
+    padding: 5px 15px;
+    border-radius: 15px;
+}
+
+
+/* Header */
+header{
+    height: 80px;
+    background-color: #0084fd;
+}
+nav{
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+nav a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+    padding: 0 1rem;
+}
+ul.flex{
+    align-items: center;
+}
+.menu-icon{
+    font-size: 1.8rem;
+    color: white;
+}
+.menu-list{
+    display:none;
+}
+
+
+
 /* TABLET 
 (>= 768px) */
 @media screen and (min-width: 768px){
-
+    
 }
 /* DESKTOP 
-(>= 768px) */
-@media screen and (min-width: 992){
+(>= 992px) */
+@media screen and (min-width: 992px){
+    /* Header */
+    nav{
+        color: white;
+    }
+    .menu-icon{
+        display: none;
+    }
+    .menu-list{
+        display:inline-block;
+    }
+    .btn-white{
+        background-color: white;
+    }
+    a .btn-white{
+        color: black;
+    }
 
 }
