@@ -9,8 +9,16 @@
 body{
     font-family: 'PT Sans', sans-serif;
 }
+img{
+    width: 100%;
+    display: block;
+}
 .mobile-padding{
     padding: 0 2rem; 
+}
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
 }
 .flex{
     display: flex;
@@ -50,11 +58,42 @@ ul.flex{
 }
 
 
+/* Main */
+.feature{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.cards-layout{
+    flex-direction: column;
+    margin-left: -2rem;
+    margin-right: -2rem;
+}
+.card-layout{
+    width: 100%;
+    padding: 2rem;
+    /* TEST */
+    border: 1px solid coral;
+}
+.card-content{
+    background-color: #b5ddff;
+}
+
+
 
 /* TABLET 
 (>= 768px) */
 @media screen and (min-width: 768px){
-    
+    .cards-layout{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .card-layout{
+        width: calc(100% / 3);
+    }
+    .card-layout:first-child{
+        width: calc((100%/3) * 2);
+    }
+
 }
 /* DESKTOP 
 (>= 992px) */
