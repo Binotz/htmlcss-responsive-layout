@@ -27,7 +27,15 @@ img{
     padding: 5px 15px;
     border-radius: 15px;
 }
-
+.btn-blue{
+    padding: 10px 70px;
+    border-radius: 30px;
+    background-color: #0084fd;
+    color: white;
+}
+a{
+    text-decoration: none;
+}
 
 /* Header */
 header{
@@ -64,18 +72,41 @@ ul.flex{
     margin-bottom: 3rem;
 }
 .cards-layout{
-    flex-direction: column;
-    margin-left: -2rem;
-    margin-right: -2rem;
+    flex-direction: column;    
 }
 .card-layout{
     width: 100%;
-    padding: 2rem;
-    /* TEST */
-    border: 1px solid coral;
+    margin-bottom: 2rem;
 }
 .card-content{
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     background-color: #b5ddff;
+    border-radius: 25px;
+}
+.card-content h2{
+    color: #0084fd;
+}
+.card-content h2,
+.card-content p,
+.card-content a,
+.card-text{
+    margin-bottom: 30px;
+    line-height: 30px;
+
+}
+.card-small{
+    text-align: center;
+    padding-bottom: 2rem;
+}
+.card-small .icon{
+    color: #0084fd;
+    font-size: 80px;
+}
+.card-small .p{
+    padding-bottom: 30px;
 }
 
 
@@ -83,17 +114,25 @@ ul.flex{
 /* TABLET 
 (>= 768px) */
 @media screen and (min-width: 768px){
+    /* Main */
     .cards-layout{
         flex-direction: row;
         flex-wrap: wrap;
+        margin: 0 -1rem;
     }
     .card-layout{
         width: calc(100% / 3);
+        padding: 0 1rem;
     }
     .card-layout:first-child{
         width: calc((100%/3) * 2);
     }
-
+    .card-image{
+        width: 50%;
+    }
+    .card-content{
+        height: 100%;
+    }
 }
 /* DESKTOP 
 (>= 992px) */
@@ -114,5 +153,15 @@ ul.flex{
     a .btn-white{
         color: black;
     }
-
+    /* Main */
+    .card-text,
+    .card-image{
+        width: 50%;
+    }
+    .card-image{
+        align-self: flex-end;
+    }
+    .card-content{
+        flex-direction: row;
+    }
 }
