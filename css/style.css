@@ -24,6 +24,10 @@ img{
     max-width: 500px;
     margin: 0 auto;
 }
+.container-extrasmall{
+    max-width: 450px;
+    margin: 0 auto;
+}
 .flex{
     display: flex;
 }
@@ -59,7 +63,11 @@ nav{
 }
 nav a{
     text-decoration: none;
+    color: white;
 }
+/* nav a:last-child{
+    color: black;
+} */
 nav li{
     list-style-type: none;
     padding: 0 1rem;
@@ -359,8 +367,21 @@ ul.flex{
 .get-started li:first-child{
     list-style-type: none;
 }
-.get-started li:last-child{
+.get-started li:last-child a{
     color: white;
+    text-decoration: underline;
+}
+/* Footer */
+footer{
+    background-color: #333333;
+    color: white;
+}
+.footer-content p{
+    text-align: center;
+    padding: 2rem 0; 
+}
+.footer-content a{
+    color:#9792e4;
     text-decoration: underline;
 }
 /* TABLET 
@@ -440,7 +461,7 @@ ul.flex{
     .btn-white{
         background-color: white;
     }
-    a .btn-white{
+    li .btn-white{
         color: black;
     }
     /* Main */
