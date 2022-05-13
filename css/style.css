@@ -113,7 +113,7 @@ ul.flex{
 .card-text{
     margin-bottom: 30px;
     line-height: 30px;
-
+    font-size: 20px;
 }
 .card-small{
     text-align: center;
@@ -221,7 +221,7 @@ ul.flex{
     font-weight: bold;
 }
 .testimonial-img-container{
-    justify-content: center;
+    justify-content: space-between;
 }
 /* Benefits */
 .benefits{
@@ -248,17 +248,17 @@ ul.flex{
 }
 .benefit-content h2{
     color: #9792e4;
-    font-size: 50px;
-    padding: 1rem 0;
+    font-size: 80px;
+    padding: 0.5rem 0;
 }
 .benefit-content h4{
     color: #9792e4;
     font-size: 25px;
-    padding: 1rem 0;
+    padding: 0.5rem 0;
 }
 .benefit-content p{
     line-height: 25px;
-    padding: 1rem 0;
+    padding: 0.5rem 0;
     padding-bottom: 2rem;
 }
 /* About us */
@@ -356,6 +356,7 @@ ul.flex{
     padding: 1rem 4rem;
     border-radius: 30px;
     margin-bottom: 2rem;
+    font-weight: bold;
 }
 .get-started ul{
     justify-content: center;
@@ -405,6 +406,11 @@ footer{
     }
     .card-content{
         height: 100%;
+        justify-content: space-between;
+    }
+    /* Strategy */
+    .strategy-left-content h2{
+        font-size: 4rem;
     }
     /* Testimonials */
     .testimonial-content{
