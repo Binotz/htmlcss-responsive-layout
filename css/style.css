@@ -20,6 +20,10 @@ img{
     max-width: 1170px;
     margin: 0 auto;
 }
+.container-small{
+    max-width: 500px;
+    margin: 0 auto;
+}
 .flex{
     display: flex;
 }
@@ -56,7 +60,7 @@ nav{
 nav a{
     text-decoration: none;
 }
-li{
+nav li{
     list-style-type: none;
     padding: 0 1rem;
 }
@@ -307,6 +311,58 @@ ul.flex{
 }
 
 
+/* Get Started */
+.get-started{
+    background-color: #9792e4;
+}
+.get-started-layout{
+    padding: 4rem 0;
+}
+.get-started-content{
+    text-align: center;
+}
+.get-started-content>*{
+    padding: 1rem 0;
+    color: white;
+}
+.get-started-content span{
+    color: #d5d4f4;
+}
+.get-started-content h3{
+    font-size: 43px;
+    font-weight: bold;
+}
+.get-started-content h2{
+    color: #fdc15f;
+    font-size: 60px;
+    font-weight: bold;
+}
+.get-started-content p{
+    line-height: 30px;
+    margin-bottom: 2rem;
+}
+.get-started-content>a{
+    display: inline-block;
+    background-color: white;
+    color: #9792e4;
+    padding: 1rem 4rem;
+    border-radius: 30px;
+    margin-bottom: 2rem;
+}
+.get-started ul{
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.get-started li{
+    margin: 0 1rem;
+}
+.get-started li:first-child{
+    list-style-type: none;
+}
+.get-started li:last-child{
+    color: white;
+    text-decoration: underline;
+}
 /* TABLET 
 (>= 768px) */
 @media screen and (min-width: 768px){
