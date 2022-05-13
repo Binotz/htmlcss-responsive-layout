@@ -249,6 +249,62 @@ ul.flex{
     padding: 1rem 0;
     padding-bottom: 2rem;
 }
+/* About us */
+.about-us-layout{
+    padding: 4rem 0;
+}
+.about-us-content{
+    flex-direction: column;
+}
+.about-us-content h2{
+    color: #9792e4;
+    font-size: 40px;
+    margin-bottom: 2rem;    
+}
+.about-us-content p
+{
+    line-height: 35px;
+    margin-bottom: 2rem;
+}
+.about-us-picture{
+    margin-bottom: 2rem;
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+.about-us-picture img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-us-employee .quote{
+    font-size: 60px;
+    color: #9792e4;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.about-us-employee p{
+    color: #9792e4;
+    font-size: 30px;
+    font-weight: bold;
+}
+.about-us-employee a{
+    padding: 8px 16px;
+}
+
+/* helper for the quote overlay effect */
+.about-us-employee-helper{
+    position: relative;
+}
+.about-us-employee-helper{
+    width: 210px;
+    height: 210px;
+    margin-bottom: 2rem;
+}
 
 
 /* TABLET 
@@ -298,7 +354,19 @@ ul.flex{
         width: calc(100% / 2);
         padding: 0 1rem;
     }
-
+    /* About us */
+    .about-us-content{
+        flex-direction: row;
+        margin: 0 -2rem;
+    }
+    .about-us-text{
+        width: 55%;
+        padding: 0 2rem;
+    }
+    .about-us-employee{
+        width: 45%;
+        padding: 0 2rem;
+    }
 }
 /* DESKTOP 
 (>= 992px) */
@@ -372,6 +440,13 @@ ul.flex{
     }
     /* Benefits */
     .benefit-layout{
+        width: calc(100% / 3);
+    }
+    /* About us */
+    .about-us-text{
+        width: calc((100% / 3) * 2);
+    }
+    .about-us-employee{
         width: calc(100% / 3);
     }
 }
